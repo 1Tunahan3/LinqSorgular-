@@ -148,14 +148,77 @@ namespace LinqSorguları
             //    Console.WriteLine(item);
             //}
 
-                 
+
+
+            //Girilen Metindeki büyük harfle yazılmış kelimeleri ekrana bastırma
+
+            // Console.WriteLine("bir cümle girin");
+            // string metin;
+
+            // metin = Console.ReadLine();
+            //  var metinn= BuyukGetir(metin);
+
+            //foreach(var item in metinn)
+            // {
+            //     Console.WriteLine(item);
+            // }
 
 
 
+            //  static IEnumerable<string> BuyukGetir(string metin)
+            // {
+            //     var buyukolanlar = metin.Split().Where(x => String.Equals(x, x.ToUpper()));
+
+            //     return buyukolanlar;
+            // }
 
 
+            //Öğrencilerden istenilen başarı sırasında olanı getirme
 
+            //List<Ogrenci> ogrenciler = new List<Ogrenci>();
+            //ogrenciler.Add(new Ogrenci { Id = 1, Name = "Tuna", Grade = 200 });
+            //ogrenciler.Add(new Ogrenci { Id = 2, Name = "Tunaha", Grade = 990 });
+            //ogrenciler.Add(new Ogrenci { Id = 3, Name = "Tunahan", Grade = 990 });
+            //ogrenciler.Add(new Ogrenci { Id = 4, Name = "TunahanK", Grade = 500 });
+            //ogrenciler.Add(new Ogrenci { Id = 5, Name = "TunahanKa", Grade = 600 });
+            //ogrenciler.Add(new Ogrenci { Id = 6, Name = "TunahanKAy", Grade = 700 });
+            //ogrenciler.Add(new Ogrenci { Id = 7, Name = "TunahanKAAYA", Grade = 800 });
+            //ogrenciler.Add(new Ogrenci { Id = 8, Name = "TunahanKaya", Grade = 100 });
+            //ogrenciler.Add(new Ogrenci { Id = 9, Name = "Tunahanahan", Grade = 300 });
+            //ogrenciler.Add(new Ogrenci { Id = 10, Name = "Tunaanah", Grade = 400 });
+            //ogrenciler.Add(new Ogrenci { Id = 11, Name = "Tunaanut", Grade = 200 });
+
+            //Console.WriteLine("kaçıncı sırdaki öğrenci");
+            //int a;
+            //a = Convert.ToInt32(Console.ReadLine());
+
+            //var sortedlist = (from x in ogrenciler
+            //                  group x by x.Grade into y
+            //                  orderby y.Key descending
+            //                  select new
+            //                  {
+            //                      Record = y.ToList()
+            //                  }).ToList();
+
+            //sortedlist[a - 1].Record.ForEach(i => Console.WriteLine("ID {0} , Name: {1}, Puan: {2}",i.Id,i.Name,i.Grade));
+
+            
+
+           
 
         }
+
+            private class Ogrenci {
+
+            public int Id { get; set; }
+
+            public string Name { get; set; }
+
+            public int Grade { get; set; } }
+                                          
+
+
+    
+
     }
 }
