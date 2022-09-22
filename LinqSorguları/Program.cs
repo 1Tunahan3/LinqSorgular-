@@ -202,10 +202,66 @@ namespace LinqSorguları
 
             //sortedlist[a - 1].Record.ForEach(i => Console.WriteLine("ID {0} , Name: {1}, Puan: {2}",i.Id,i.Name,i.Grade));
 
-            
 
-           
 
+
+            //Karakter listesinde istenen indexteki elemanı silme
+
+            //List<string> list = new List<string>();
+            //list.Add("t");
+            //list.Add("u");
+            //list.Add("n");
+            //list.Add("a");
+            //list.Add("h");
+            //list.Add("a");
+            //list.Add("n");
+
+            //var list2 = from x in list
+            //            select x;
+
+            //foreach(var item in list2)
+            //{
+            //    Console.WriteLine("Char: {0}",item);
+            //}
+
+            //list.RemoveAt(4);
+
+            //var list3 = from x in list
+            //            select x;
+
+            //Console.WriteLine("------------------------------------------");
+
+            //foreach (var item in list3)
+            //{
+            //    Console.WriteLine("Char: {0}", item);
+            //}
+
+
+
+            //Girilen metindeki kelimelerden istenilen uzunluktan büyük olanları ekrana yazdırma
+
+            //int a;
+            //Console.WriteLine("Kaç kelimeden oluşan bir metin girelecek");
+            //a =Convert.ToInt32(Console.ReadLine());
+
+            //string[] metin = new string[a];
+            //for(int i=0; i<a; i++)
+            //{
+            //    metin[i] = Console.ReadLine();
+            //}
+
+            //Console.WriteLine("Kaç karakterden fazla olanlar basılsın");
+            //int b;
+            //b= Convert.ToInt32(Console.ReadLine());
+            //var result = from x in metin
+            //             where x.Length > 3
+            //             orderby x
+            //             select x;
+
+            //foreach(var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
         }
 
             private class Ogrenci {
